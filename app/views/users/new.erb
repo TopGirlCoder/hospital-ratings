@@ -1,0 +1,13 @@
+<h3>Register to rate hospitals you have visited</h3>
+  <form id="register" method="post" action="/users">
+    <h2>Sign up</h2>
+      <% if @errors %>
+        <%= @errors.join(" ") %><br>
+      <% end %>
+    <input type="text" name="user[first_name]" placeholder="First name"><br>
+    <input type="text" name="user[last_name]" placeholder="Last name"><br>
+    <input type="email" name="user[email]" placeholder="Email address"><br>
+    <input type="password" name="user[password]" placeholder="Password"><br>
+    <input type="submit" name="submit" value="Sign Up">
+  </form>
+

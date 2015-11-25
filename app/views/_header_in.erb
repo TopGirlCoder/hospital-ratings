@@ -1,0 +1,5 @@
+ <!-- Log out form -->
+ <form method="post" action="/sessions/<%= @user.id %>">
+              <input type="hidden" name="_method" value="delete">
+              <input type="submit" name="submit" value="Log Out">
+            </form><br><br>
