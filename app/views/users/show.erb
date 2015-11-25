@@ -5,20 +5,11 @@
 <body>
 <h1>Welcome <%= @user.first_name %>!</h1>
 
-  <% if @user.items.empty? %>
-    <h3>You have no items listed.</h3>
-  <% else %>
-    <h3>Here are all of your items: </h3>
-      <% @user.items.each do |item| %>
-        <a href=<%="/items/#{item.id}" %>><%= item.name %></a><br>
-        <a href=<%="/items/#{item.id}/edit" %>>Edit Item</a> |
-        <a href=<%="/items/#{item.id}/delete" %>>Delete Item</a><br><br>
+    <h3>Here are all of your hospitals: </h3>
+      <% @user.hospitals.each do |hospital| %>
+        <a href=<%="/hospitals/#{hospital.id}" %>><%= hospital.name %></a><br>
+        <p><%= hospital.rating %></p>
       <% end %>
-  <% end %>
-
-  <form method="get" action="/items/new">
-  <input type="submit" name="submit" value="Add an Item">    
-  </form>
 
   </body>
 </html>
