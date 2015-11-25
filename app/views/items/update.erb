@@ -1,0 +1,12 @@
+<% @item.errors.full_messages.each do |error| %>	
+	<h4><%= error %></h4>
+<% end %>	
+
+<main class="form-wrapper" role="main">
+<form action="/items/<%= item.id %>" method="post">
+	<input type="hidden" name="_method" value="put" >	
+	<input type="text" name="item[name]" placeholder="Name" value="<%=item.name %>" >
+	<input type="text" name="item[description]" placeholder="description" value="<%= item.description %>" >
+	<input type="submit" value="Create Items" >
+</form>
+</main>

@@ -1,0 +1,63 @@
+<!-- Index page (login, register, show all items) -->
+<div class="container">
+	<table>
+	<tr>
+	<td width="60%">
+  	<h1>Auction Items</h1>
+<!-- Show all auction items -->
+	<ul class="items">
+		<% @items.each do |item| %>
+			<li>Item:
+			<%= item.name %><br>
+			Description:
+			<%= item.description %><br>
+			Current bid: $
+			<%= item.max_bid %><br>
+      <%if !session[:user_id].nil? %>
+        <form id="bid" method="post" action="/bids">
+              <input type="number" name="bid[bid]" placeholder="Bid on this item"><br>
+              <input type="submit" name="submit" value="Bid">   
+        </form>          				
+		  <% end %><br><br>
+      </li>
+      <% end %>
+	</ul>
+	</td>
+	<td>
+<%if session[:user_id].nil? %>  
+            <table>
+              <%= @errors %>
+<!-- Log in form -->
+                <form id="login" method="post" action="/sessions">
+                  <tr>
+                    <td><label>Email</label></td>
+                    <td><label>Password</label></td>
+                  </tr>
+                  <tr>
+                    <td><input type="email" name="user[email]" placeholder="Email"></td>
+                    <td><input type="password" name="user[password]" placeholder="Password"></td>
+                    <td><input type="submit" name="submit" value="Log In"></td>
+                  </tr>
+                </form>
+            </table>
+	<div class="rtsidebar">
+<!-- Registration form -->
+		<h3>Sign in or register to bid on items, or to auction your items</h3>
+            <form id="register" method="post" action="/users">
+              <h2>Sign up</h2> 
+                <% if @errors %>
+                  <%= @errors.join(" ") %><br>
+                <% end %> 
+              <input type="text" name="user[first_name]" placeholder="First name"><br>
+              <input type="text" name="user[last_name]" placeholder="Last name"><br>
+              <input type="email" name="user[email]" placeholder="Email address"><br>
+              <input type="password" name="user[password]" placeholder="Password"><br>
+              <input type="submit" name="submit" value="Sign Up">    
+            </form> 
+          </div>
+          <% end %>
+          </td>
+          </tr>
+
+	</table>	
+</div>
