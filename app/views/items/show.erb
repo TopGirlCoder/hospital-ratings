@@ -1,0 +1,27 @@
+<!-- SHOW: items/:id -->
+<!DOCTYPE html>
+<html>
+	<body>
+		<div class="container">
+			<h3>Your item has been added to the list:</h3>
+			<table>
+				<tr>
+					<td>Item name: </td>
+					<td><%= @item.name %></td>
+				</tr>	
+				<tr>
+					<td>Description: </td>
+					<td><%= @item.description %></td>
+				</tr>
+				<tr>
+					<td>Reserve price: $</td>
+					<td><%= @item.reserve_price %></td>
+				</tr>
+			</table><br>		
+			<a href="<%= "/items/#{@item.id}/edit" %>">Edit item</a><br>
+			<a href="<%= "/items/#{@item.id}/delete" %>">Delete item</a><br>
+			<a href="<%= "/items/new" %>">Add an item</a><br>
+			
+		</div>
+  	</body>
+</html>
