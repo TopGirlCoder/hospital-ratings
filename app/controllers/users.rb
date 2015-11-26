@@ -8,7 +8,7 @@ post '/sessions' do   #post /users
   p "hello from NEW LOGIN post /sessions route"
   p "="*100
 
-  @user = User.f  (params[:email])
+  @user = User.find(params[:email])
   p "@user.password #{@user.password} params[:password] #{params[:password]}"
   if @user && @user.password == params[:password]
       session[:user_id] = @user.id

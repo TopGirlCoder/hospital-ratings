@@ -1,15 +1,16 @@
-<!-- items/edit.erb -->
-<h1>Edit the Item</h1>
+<!-- hospitals/edit.erb -->
+<h1>Edit the Hospital</h1>
 
 <main class="form-wrapper" role="main">
-  <form method="post" action="/items/<%= @item.id %>">
-    <label>Item name: </label><br>
-    <input type="text" name="item[name]" value="<%= @item.name %>"><br>
-    <label>Item description:</label><br>
-    <input type="text" name="item[description]" value="<%= @item.description %>"><br>
-    <label>Reserve price: </label><br>
-    <input type="number" name="item[reserve_price]" value="<%= @item.reserve_price %>"><br>
+  <form method="post" action="/hospitals/<%= @hospital.id %>">
+    <label>Hospital
+   name: </label><br>
+    <input type="text" name="hospital[name]" value="<%= @hospital.name %>"><br>
+    <label>Hospital
+   location:</label><br>
+    <input type="text" name="hospital[location]" value="<%= @hospital.location %>"><br>
     <input type="hidden" name="_method" value="put">
-	<input type="submit" value="Update Item" class="button">
+	<input type="submit" value="Update Hospital
+" class="button">
   </form>
 </main>
