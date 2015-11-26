@@ -2,7 +2,12 @@
 <h1>Welcome <%= current_user.first_name %>!</h1>
 
       <h1>Your Rated Hospitals</h1>
-      <% ratings.each do |rating| %>
-        <a href=<%="/hospitals/#{rating.hospital.id}" %>><%= rating.hospital.name %></a><br>
-        <p><%= rating.scores %></p>
+
+      <% @ratings.each do |rating| %>
+
+        <a href="/hospitals/<%= rating.hospital_id %>">
+          <%#= rating.hospital.name %>
+          </a><br>
+
+        <p><%= rating.score %></p>
       <% end %>
