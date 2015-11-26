@@ -11,7 +11,7 @@
  		)
 	2.times do
 		rating = Rating.create!(
-		stars: rand(0..5),
+		score: rand(0..5),
 		hospital_id: rand(1..5),
 		user_id: rand(1..5)
 		)

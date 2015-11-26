@@ -13,7 +13,7 @@ class CreateTables < ActiveRecord::Migration
 	  		t.timestamps null: false
 	  	end
 	  	create_table :ratings do |t|
-	  		t.integer :stars
+	  		t.integer :score
 	  		t.references :user
 	  		t.references :hospital
 	  		t.timestamps null: false
