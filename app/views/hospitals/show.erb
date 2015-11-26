@@ -1,27 +1,9 @@
-<!-- SHOW: items/:id -->
-<!DOCTYPE html>
-<html>
-	<body>
-		<div class="container">
-			<h3>Your item has been added to the list:</h3>
-			<table>
-				<tr>
-					<td>Item name: </td>
-					<td><%= @item.name %></td>
-				</tr>	
-				<tr>
-					<td>Description: </td>
-					<td><%= @item.description %></td>
-				</tr>
-				<tr>
-					<td>Reserve price: $</td>
-					<td><%= @item.reserve_price %></td>
-				</tr>
-			</table><br>		
-			<a href="<%= "/items/#{@item.id}/edit" %>">Edit item</a><br>
-			<a href="<%= "/items/#{@item.id}/delete" %>">Delete item</a><br>
-			<a href="<%= "/items/new" %>">Add an item</a><br>
-			
-		</div>
-  	</body>
-</html>
+<!-- Hospital SHOW: /:id -->
+<h1><%= @hospital.name %></h1>
+
+<h2><%= @hospital.location %></h2>
+<p>Infection Rating: <%= @hospital.infection_score %></p>
+<p>Patient Experience Rating: <%= @hospital.patientexp_score %></p>
+<p>Performance Rating: <%= @hospital.performance_score %></p>
+<p>Pneumonia Rating: <%= @hospital.pneumonia_score %></p>
+<p>Average User Rating: <%= @user_score_avg %></p>

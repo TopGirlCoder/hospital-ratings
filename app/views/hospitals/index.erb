@@ -1,4 +1,6 @@
-<!-- Index page to show all hospitals with ratings -->
+<!-- Index page to show all hospitals with rating -->
 <div class="container">
-
+<!--       <h1><%= current_user.name %>'s Rated Hospitals</h1>
+ -->        <% @hospitals.each do |hospital| %>
+          <%= hospital.name %> <%= hospital.ratings %>
 </div>
