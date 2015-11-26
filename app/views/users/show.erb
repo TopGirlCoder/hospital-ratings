@@ -1,15 +1,8 @@
 <!-- users/profile.erb -->
-<!DOCTYPE html>
-<html>
+<h1>Welcome <%= current_user.first_name %>!</h1>
 
-<body>
-<h1>Welcome <%= @user.first_name %>!</h1>
-
-    <h3>Here are all of your hospitals: </h3>
-      <% @user.hospitals.each do |hospital| %>
-        <a href=<%="/hospitals/#{hospital.id}" %>><%= hospital.name %></a><br>
-        <p><%= hospital.rating %></p>
+      <h1>Your Rated Hospitals</h1>
+      <% ratings.each do |rating| %>
+        <a href=<%="/hospitals/#{rating.hospital.id}" %>><%= rating.hospital.name %></a><br>
+        <p><%= rating.scores %></p>
       <% end %>
-
-  </body>
-</html>
