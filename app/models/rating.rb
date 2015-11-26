@@ -3,7 +3,7 @@ class Rating < ActiveRecord::Base
 	belongs_to :user
 	belongs_to :hospital
 
-	def average_stars
+	def average_scores
 		##sums the stars and divide by the number of stars to get average
 	end
 end
