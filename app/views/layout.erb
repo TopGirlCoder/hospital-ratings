@@ -20,7 +20,7 @@
 </head>
 <body>
   <div id="wrap">
-  <img id="help-logo" src="../images/help-logo-copy.jpg">
+  <div id="help-logo"><a href="/"><img src="../images/help-logo-copy.jpg"/></a></div>
 
   <%= erb :'_header_in' if session[:id] %>
   <%= erb :'_header_out' if !session[:id] %>

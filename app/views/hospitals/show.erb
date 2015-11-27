@@ -1,9 +1,6 @@
 <!-- Hospital SHOW: /:id -->
 <h1><%= @hospital.name %></h1>
 
-<h2><%= @hospital.location %></h2>
-<p>Infection Rating: <%#= @hospital.infection_score %></p>
-<p>Patient Experience Rating: <%#= @hospital.patientexp_score %></p>
-<p>Performance Rating: <%#= @hospital.performance_score %></p>
-<p>Pneumonia Rating: <%#= @hospital.pneumonia_score %></p>
-<p>Average User Rating: <%= @avg_user_score %></p>
+<h2><%= @hospital.address %></h2>
+<p id="catheter-score">Catheter Infection Score:<%= @hospital.catheter_score %></p>
+
