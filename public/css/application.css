@@ -1,6 +1,14 @@
 /**{
 	border: blue 2px dotted;
 }*/
+
+a:link {
+	color: white;
+}
+a:visited {
+	color: black;
+}
+
 body {
 	background-color: #b40e00;
 }
@@ -11,9 +19,29 @@ body {
 
 #wrap {
 	width: 900px; 
-	margin: 0 auto; 
+	margin: 0px auto; 
 }
 
-#help-logo {
+#help-logo{
 	text-align: center;
 }
+
+#logout {
+	text-align: center;
+}
+
+.header-links{
+	font-size: 2em;
+}
+
+#catheter-score{
+	font-size: 3em;
+	color: white;
+	float: right;
+}
+
+#map{
+	height:500px ;
+	width:600px;
+}
+

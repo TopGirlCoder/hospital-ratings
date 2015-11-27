@@ -54,7 +54,7 @@ get '/hospitals/:id' do
 	# @hospital = Hospital.where(id: params[:id]).first
 	@hospital = Hospital.find(params[:id])
 	if @hospital
-		@avg_user_score = @hospital.ratings.average(:score).round
+		# @avg_user_score = @hospital.ratings.average(:score).round
 		erb :"hospitals/show"
 	else
 		@errors = @hospital.errors.full_messages
