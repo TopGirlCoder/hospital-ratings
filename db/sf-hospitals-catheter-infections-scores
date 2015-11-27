@@ -1,0 +1,225 @@
+sf-hospitals-catheter-infections-scores
+
+HELP App token on Data.Medicare.gov:
+
+
+Provider ID050070
+Hospital NameKAISER FOUNDATION HOSPITAL - SOUTH SAN FRANCISCO
+Address1200 EL CAMINO REAL
+CitySOUTH SAN FRANCISCO
+StateCA
+ZIP Code94080
+County NameSAN MATEO
+Phone Numberunknown (650) 742-3200
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNo Different than National Benchmark
+Score0.711
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.657535°, -122.437658°
+
+Provider ID050457
+Hospital NameST MARY'S MEDICAL CENTER
+Address450 STANYAN ST
+CitySAN FRANCISCO
+StateCA
+ZIP Code94117
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 668-1000
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNo Different than National Benchmark
+Score0.000
+Footnote8 - The lower limit of the confidence interval cannot be calculated if the number of observed infections equals zero.
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.773859°, -122.454498°)
+
+Provider ID050076
+Hospital NameKAISER FOUNDATION HOSPITAL - SAN FRANCISCO
+Address2425 GEARY BLVD
+CitySAN FRANCISCO
+StateCA
+ZIP Code94115
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 833-2646
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNo Different than National Benchmark
+Score1.028
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.782741°, -122.443564°)
+
+Provider ID050008
+Hospital NameCALIFORNIA PACIFIC MEDICAL CTR-DAVIES CAMPUS HOSP
+Address601 DUBOCE AVE
+CitySAN FRANCISCO
+StateCA
+ZIP Code94117
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 600-6000
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalWorse than the National Benchmark
+Score4.684
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.769114°, -122.434706°)
+
+Provider ID050228
+Hospital NameSAN FRANCISCO GENERAL HOSPITAL
+Address1001 POTRERO AVENUE
+CitySAN FRANCISCO
+StateCA
+ZIP Code94110
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 206-8000
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNo Different than National Benchmark
+Score0.913
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.756171°, -122.406608°)
+
+Provider ID050407
+Hospital NameCHINESE HOSPITAL
+Address845 JACKSON ST
+CitySAN FRANCISCO
+StateCA
+ZIP Code94133
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 982-2400
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNot Available
+ScoreNot Available
+Footnote13 - Results cannot be calculated for this reporting period.
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.795724°, -122.409014°)
+
+Provider ID050047
+Hospital NameCALIFORNIA PACIFIC MEDICAL CTR-PACIFIC CAMPUS HOSP
+Address2333 BUCHANAN STREET
+CitySAN FRANCISCO
+StateCA
+ZIP Code94115
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 600-6000
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalWorse than the National Benchmark
+Score3.127
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.791188°, -122.43096°)
+
+Provider ID050152
+Hospital NameSAINT FRANCIS MEMORIAL HOSPITAL
+Address900 HYDE ST
+CitySAN FRANCISCO
+StateCA
+ZIP Code94109
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 353-6000
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNo Different than National Benchmark
+Score1.069
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.789561°, -122.417112°)
+
+Provider ID050668
+Hospital NameLAGUNA HONDA HOSPITAL & REHABILITATION CENTER
+Address375 LAGUNA HONDA BLVD
+CitySAN FRANCISCO
+StateCA
+ZIP Code94116
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 759-2300
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNot Available
+ScoreNot Available
+Footnote12 - This measure does not apply to this hospital for this reporting period.
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.74755°, -122.458778°)
+
+Provider ID050055
+Hospital NameCALIFORNIA PACIFIC MEDICAL CTR - ST. LUKE'S CAMPUS
+Address3555 CESAR CHAVEZ STREET
+CitySAN FRANCISCO
+StateCA
+ZIP Code94110
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 641-6562
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNo Different than National Benchmark
+Score1.498
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location
+
+Provider ID400098
+Hospital NameHOSPITAL SAN FRANCISCO
+Address371 DE DIEGO AVE
+CitySAN JUAN
+StatePR
+ZIP Code00923
+County NameSAN JUAN
+Phone Numberunknown (787) 767-5100
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalNo Different than National Benchmark
+Score0.000
+Footnote8 - The lower limit of the confidence interval cannot be calculated if the number of observed infections equals zero.
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location
+
+Provider ID050454
+Hospital NameUCSF MEDICAL CENTER
+Address505 PARNASSUS AVE, BOX 0296
+CitySAN FRANCISCO
+StateCA
+ZIP Code94143
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 353-2733
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalBetter than the National Benchmark
+Score0.721
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.763471°, -122.457942°)
+
+Provider ID050454
+Hospital NameUCSF MEDICAL CENTER
+Address505 PARNASSUS AVE, BOX 0296
+CitySAN FRANCISCO
+StateCA
+ZIP Code94143
+County NameSAN FRANCISCO
+Phone Numberunknown (415) 353-2733
+Measure NameCatheter-Associated Urinary Tract Infections (CAUTI)
+Measure IDHAI_2_SIR
+Compared to NationalBetter than the National Benchmark
+Score0.721
+Footnote
+Measure Start Date01/01/2014
+Measure End Date12/31/2014
+Location(37.763471°, -122.457942°)
