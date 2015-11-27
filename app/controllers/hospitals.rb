@@ -6,7 +6,7 @@
 ##### ITEMS #####
 # before '/users/*' do
 # 	pass if params['splat'][0] == "new"
-# 	if (session[:user_id].nil?)
+# 	if (session[:id].nil?)
 # 		redirect '/'
 # 	end
 # 	p "Success"
@@ -16,7 +16,7 @@
 #  INDEX ROUTE - retrieves list of hospitals
 # --------------------------
 get '/hospitals' do
-	@user = User.find(session[:user_id]) if session[:user_id]
+	@user = User.find(session[:id]) if session[:id]
 	@hospitals = Hospital.all
 	erb :"hospitals/index"
 end
@@ -28,7 +28,7 @@ end
 # make the new hospital.
 # --------------------------
 get '/hospitals/new' do
-	@user = User.find(session[:user_id])
+	@user = User.find(session[:id]) if session[:id]
 	erb :"hospitals/new"
 end
 # --------------------------
@@ -37,7 +37,7 @@ end
 post '/hospitals' do
 	###general users do not create new hospitals
 	###maybe admin can create new
-	@user = User.find(session[:user_id])
+	@user = User.find(session[:id]) if session[:id]
 	@hospital = @user.hospitals.new(params[:hospital])
 	if @hospital.save
 		redirect "/hospitals/#{@hospital.id}"
@@ -50,7 +50,7 @@ end
 # SHOW ROUTE - Shows a new hospital
 # --------------------------
 get '/hospitals/:id' do
-	@user = User.find(session[:user_id])
+	@user = User.find(session[:id]) if session[:id]
 	# @hospital = Hospital.where(id: params[:id]).first
 	@hospital = Hospital.find(params[:id])
 	if @hospital
@@ -66,7 +66,7 @@ end
 # EDIT ROUTE
 # --------------------------
 get '/hospitals/:id/edit' do
-	@user = User.find(session[:user_id])
+	@user = User.find(session[:id]) if session[:id]
 	@hospital = Hospital.where(id: params[:id]).first
 	if @hospital
 		erb :"hospitals/edit"
@@ -80,7 +80,7 @@ end
 # UPDATE ROUTE
 # --------------------------
 put '/hospitals/:id' do
-	@user = User.find(session[:user_id])
+	@user = User.find(session[:id]) if session[:id]
 	@hospital = Hospital.where(id: params[:id]).first
 	@hospital.update_attributes(params[:hospital])
 	if @hospital.save
@@ -95,7 +95,7 @@ end
 # DELETE ROUTE
 # --------------------------
 get '/hospitals/:id/delete' do
-	@user = User.find(session[:user_id])
+	@user = User.find(session[:id]) if session[:id]
 	@hospital = Hospital.where(id: params[:id]).first
 	if @hospital.destroy
 		redirect '/'

@@ -2,6 +2,8 @@ $(document).ready(function() {
 
 	initialize();
 
+
+  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 });
 
 function initialize(){
