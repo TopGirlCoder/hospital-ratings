@@ -1,0 +1,19 @@
+/**{
+	border: blue 2px dotted;
+}*/
+body {
+	background-color: #b40e00;
+}
+
+.body-container {
+
+}
+
+#wrap {
+	width: 900px; 
+	margin: 0 auto; 
+}
+
+#help-logo {
+	text-align: center;
+}

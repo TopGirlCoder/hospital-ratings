@@ -12,17 +12,20 @@
   -->
   <link rel="stylesheet" href="/css/application.css">
 
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="/js/jquery.js"></script>
   <script src="/js/application.js"></script>
 
   <title></title>
 </head>
 <body>
-  <h1 text-align="center">Help</h1>
+  <div id="wrap">
+  <img id="help-logo" src="../images/help-logo-copy.jpg">
 
   <%= erb :'_header_in' if session[:id] %>
   <%= erb :'_header_out' if !session[:id] %>
 
   <%= yield %>
+</div>
 </body>
 </html>
