@@ -1,9 +1,13 @@
 <!-- Index page to show all hospitals with rating -->
-<div class="container">
+<div class="body-container">
 <!--       Will show the hospitals within a given radius of the user's location (logged in or not)-->
   <ul>
   <% @hospitals.each do |hospital| %>
     <li><%= hospital.name %></li>
   <% end %>
   </ul>
+
+
+    <div id="map" style="height:500px; width:600px;"></div>
+
 </div>
