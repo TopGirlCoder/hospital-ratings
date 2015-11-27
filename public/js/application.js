@@ -17,7 +17,7 @@ function initialize(){
         var geocoder = new google.maps.Geocoder();
 
 
-        geocoder.geocode( { 'address': '440 Tonopah Drive, Fremont, CA 94539'}, function(results, status) {
+        geocoder.geocode( { 'address': '37.657535, -122.437658'}, function(results, status) {
           if (status == google.maps.GeocoderStatus.OK) {
             map.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({

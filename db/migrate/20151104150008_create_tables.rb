@@ -9,6 +9,8 @@ class CreateTables < ActiveRecord::Migration
 	  	end
 	  	create_table :hospitals do |t|
 	  		t.string :name
+	  		t.string :address
+	  		t.integer :catheter_score
 	  		t.string :location
 	  		t.timestamps null: false
 	  	end
