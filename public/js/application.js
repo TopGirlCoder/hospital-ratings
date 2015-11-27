@@ -16,16 +16,19 @@ function initialize(){
 
         var geocoder = new google.maps.Geocoder();
 
+        for (var i = 0; i < hospitals.length; i++)
+          // geocoder.geocode( { 'location': '440 Tonopah Drive, Fremont, CA 94539'}, function(results, status) {
+          geocoder.geocode( { (hospitals['location'][i]);}, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+              map.setCenter(results[0].geometry.location);
+              var marker = new google.maps.Marker({
+                  map: map,
+                  position: results[0].geometry.location
+              });
+            } else {
+              alert('Geocode was not successful for the following reason: ' + status);
+            }
+          });
+      }
 
-        geocoder.geocode( { 'address': '37.657535, -122.437658'}, function(results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            map.setCenter(results[0].geometry.location);
-            var marker = new google.maps.Marker({
-                map: map,
-                position: results[0].geometry.location
-            });
-          } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-          }
-        });
  }
