@@ -35,6 +35,8 @@ body {
 	font-size: 2em;
 	margin-bottom: 5px;
 	text-align: center;
+	color: #FFFFFF !important;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000 !important;
 }
 
 #catheter-score{
