@@ -1,12 +1,12 @@
-<a href="/items/new">New Item</a>
+<a href="/hospitals/new">New Hospital</a>
 <ul>
-	<% @items.each do |item| %>
+	<% @hospitals.each do |hospital| %>
 		<li>
-			<h4><%= item.title %></h4>
-			<a href="/items/<%= item.id %>/edit">Edit</a>
-			<form action="/items/<%= item.id %>" method="post">
-				<input type="hidden" name="_method" value="delete">	
-				<input type="submit" value="Delete item">
+			<h4><%= hospital.title %></h4>
+			<a href="/hospitals/<%= hospital.id %>/edit">Edit</a>
+			<form action="/hospitals/<%= hospital.id %>" method="post">
+				<input type="hidden" name="_method" value="delete">
+				<input type="submit" value="Delete hospital">
 			</form>
 		</li>
 	<% end %>
