@@ -16,6 +16,8 @@ gem 'hirb'
 gem 'rack', '1.5.2'
 gem 'shotgun'
 
+gem 'httparty'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
@@ -24,4 +26,5 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl'
   gem 'faker'
+  gem 'dotenv'
 end
