@@ -14,6 +14,7 @@ body {
 }
 
 .body-container {
+	text-align: center;
 
 }
 
@@ -32,6 +33,9 @@ body {
 
 .header-links{
 	font-size: 2em;
+	margin-bottom: 5px;
+	text-align: center;
+  text-shadow: .5px 0 0 #fff, 0 -.5px 0 #fff, 0 .5px 0 #fff, -.5px 0 0 #fff;
 }
 
 #catheter-score{
@@ -43,5 +47,6 @@ body {
 #map{
 	height:500px ;
 	width:600px;
+	margin: 0px auto;
 }
 
