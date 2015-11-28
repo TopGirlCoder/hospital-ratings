@@ -1,0 +1,9 @@
+
+
+<% @sf_hospitals.each do |hospital| %>
+  <p><%=hospital["hospital_name"]%></p>
+  <p><%=hospital["address"]%></p>
+  <p><%=hospital["city"]%></p>
+  <p>Score: <%=hospital["score"]%></p>
+  <br>
+<%end%>
