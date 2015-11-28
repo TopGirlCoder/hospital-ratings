@@ -28,6 +28,15 @@ function initialize(){
                 map: map,
                 position: results[0].geometry.location
             });
+            var infoWindow = new google.maps.InfoWindow({
+              content: "Kaiser Foundation Hospital -- Catheter Score: 0.711"
+            });
+            google.maps.event.addListener(marker, 'mouseover', function() {
+              infoWindow.open(map, marker);
+            });
+            marker.addListener('mouseout', function() {
+              infowindow.close();
+            });
           } else {
             alert('Geocode was not successful for the following reason: ' + status);
           }
