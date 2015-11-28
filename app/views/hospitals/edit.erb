@@ -1,0 +1,16 @@
+<!-- hospitals/edit.erb -->
+<h1>Edit the Hospital</h1>
+
+<main class="form-wrapper" role="main">
+  <form method="post" action="/hospitals/<%= @hospital.id %>">
+    <label>Hospital
+   name: </label><br>
+    <input type="text" name="hospital[name]" value="<%= @hospital.name %>"><br>
+    <label>Hospital
+   location:</label><br>
+    <input type="text" name="hospital[location]" value="<%= @hospital.location %>"><br>
+    <input type="hidden" name="_method" value="put">
+	<input type="submit" value="Update Hospital
+" class="button">
+  </form>
+</main>
